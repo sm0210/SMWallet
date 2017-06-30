@@ -1,7 +1,5 @@
 # SMWallet
-SMWallet动画波浪球(http://www.itssh.cn/)
-
-SMWallet动画波浪球，依赖Jquery，有问题请发邮件：sm0210@qq.com
+SMWallet动画波浪球(http://www.itssh.cn/)，依赖Jquery，有问题请发邮件：sm0210@qq.com
 
 ## 实例化SMWallet动画波浪球
 
@@ -34,11 +32,11 @@ SMWallet动画波浪球，依赖Jquery，有问题请发邮件：sm0210@qq.com
  
  ## 重新渲染时间轴
 ````
-    //reload 重新渲染
-		var config2 = {};
-		config2.amount = '4500.00';
-		config2.amountTitle = 'reload渲染';
-		wa.reload(config2);
+  //reload 重新渲染
+  var config2 = {};
+  config2.amount = '4500.00';
+  config2.amountTitle = 'reload渲染';
+  wa.reload(config2);
 
  ````
  
