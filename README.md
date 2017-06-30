@@ -1,5 +1,5 @@
 # SMWallet
-SMWallet动画波浪球(http://www.itssh.cn/)，依赖Jquery，有问题请发邮件：sm0210@qq.com
+SMWallet动画波浪球( http://www.itssh.cn/ )  ，依赖Jquery，有问题请发邮件：sm0210@qq.com
 
 ## 实例化SMWallet动画波浪球
 
