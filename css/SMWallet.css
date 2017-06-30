@@ -1,0 +1,284 @@
+/*
+	@author:SM
+	@desc:SMWallet动画波浪球
+*/
+.walletGreen,
+.walletRed,
+.walletOrange {
+	width:163px;
+	height: 163px;
+}
+/*
+	圆环内部大小
+*/
+.walletGreen .walletProgress,
+.walletRed .walletProgress,
+.walletOrange .walletProgress {
+  position: relative;
+  border-radius: 50%;
+  max-width: 163px;
+  max-height: 163px;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+	圆环边框
+*/
+.walletGreen .walletProgress,
+.walletRed .walletProgress,
+.walletOrange .walletProgress {
+  border: 1px solid #E2E2E2;
+}
+
+/*
+	圆环内部所有元素过度效果
+*/
+.walletGreen .walletProgress,
+.walletRed .walletProgress,
+.walletOrange .walletProgress {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/*
+	波浪线动画
+*/
+.walletGreen .walletProgress .walletInner,
+.walletRed .walletProgress .walletInner,
+.walletOrange .walletProgress .walletInner {
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+/*
+	圆形内部大小
+*/
+.walletGreen .walletProgress .walletInner,
+.walletRed .walletProgress .walletInner,
+.walletOrange .walletProgress .walletInner {
+  max-width: 163px;
+  max-height: 163px;
+  width:100%;
+  height: 100%;
+  
+}
+.walletGreen .walletProgress .walletInner,
+.walletRed .walletProgress .walletInner,
+.walletOrange .walletProgress .walletInner {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.walletGreen .walletProgress .walletInner .walletWater,
+.walletRed .walletProgress .walletInner .walletWater,
+.walletOrange .walletProgress .walletInner .walletWater {
+  position: absolute;
+  z-index: 1;
+  width: 200%;
+  height: 200%;
+  left: -50%;
+  border-radius: 40%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: spin;
+  animation-name: spin;
+}
+
+/*
+	默认百分百
+*/
+.walletGreen .walletProgress .walletInner .walletWater {
+  top: 25%;
+}
+
+/*
+	绿色动画1px阴影
+*/
+/*
+	蓝色背景--正常
+*/
+.walletGreen .walletProgress .walletInner .walletWater {
+  background: url('../images/walletGreen.png') repeat-x;
+  background-position-x:0px;
+}
+/*
+	过度效果
+*/
+.walletGreen .walletProgress .walletInner .walletWater,
+.walletRed .walletProgress .walletInner .walletWater,
+.walletOrange .walletProgress .walletInner .walletWater {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/*
+	动画时间
+*/
+.walletGreen .walletProgress .walletInner .walletWater,
+.walletRed .walletProgress .walletInner .walletWater,
+.walletOrange .walletProgress .walletInner .walletWater {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
+
+
+/*
+	文字部分样式
+*/
+.walletGreen .walletProgress .walletInner .walletPercent,
+.walletRed .walletProgress .walletInner .walletPercent,
+.walletOrange .walletProgress .walletInner .walletPercent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index:10;
+  
+}
+
+
+/*
+	文字颜色 大小
+*/
+.walletGreen .walletProgress .walletInner .walletPercent,
+.walletRed .walletProgress .walletInner .walletPercent,
+.walletOrange .walletProgress .walletInner .walletPercent {
+  color: #282828;
+  margin-top: 51px;
+}
+
+
+/*
+	title公用样式
+*/
+.walletGreen .walletProgress .walletInner .walletPercent .title1,
+.walletRed .walletProgress .walletInner .walletPercent .title1,
+.walletOrange .walletProgress .walletInner .walletPercent .title1,
+.walletGreen .walletProgress .walletInner .walletPercent .title2,
+.walletRed .walletProgress .walletInner .walletPercent .title2,
+.walletOrange .walletProgress .walletInner .walletPercent .title2,
+.walletGreen .walletProgress .walletInner .walletPercent .title3,
+.walletRed .walletProgress .walletInner .walletPercent .title3,
+.walletOrange .walletProgress .walletInner .walletPercent .title3,
+.walletGreen .walletProgress .walletInner .walletPercent .line,
+.walletRed .walletProgress .walletInner .walletPercent .line,
+.walletOrange .walletProgress .walletInner .walletPercent .line {
+	margin: 0px;
+	padding: 0px;
+	line-height: normal;
+	font-weight: normal;
+	font-size: 0px;
+}
+
+/*
+	titl1
+*/
+.walletGreen .walletProgress .walletInner .walletPercent .title1,
+.walletRed .walletProgress .walletInner .walletPercent .title1,
+.walletOrange .walletProgress .walletInner .walletPercent .title1 {
+	font-size: 13px;
+	opacity:0.8;
+	margin-bottom: 10px;
+}
+
+/*
+	titl2
+*/
+.walletGreen .walletProgress .walletInner .walletPercent .title2,
+.walletRed .walletProgress .walletInner .walletPercent .title2,
+.walletOrange .walletProgress .walletInner .walletPercent .title2 {
+	font-size: 25px;
+}
+
+/*
+	titl3
+*/
+.walletGreen .walletProgress .walletInner .walletPercent .title3,
+.walletRed .walletProgress .walletInner .walletPercent .title3,
+.walletOrange .walletProgress .walletInner .walletPercent .title3 {
+	font-size: 12px;
+	opacity:0.5;
+	padding-top: 10px;
+}
+
+/*
+	line
+*/
+.walletGreen .walletProgress .walletInner .walletPercent .line,
+.walletRed .walletProgress .walletInner .walletPercent .line,
+.walletOrange .walletProgress .walletInner .walletPercent .line {
+	height: 1px;
+	border-top:1px solid #ffffff;
+	margin-left: 10px;
+	margin-right: 10px;
+	opacity:0.3;
+	margin-top: 8px;
+}
+
+/*
+	文字过度效果
+*/
+.walletGreen .walletProgress .walletInner .walletPercent,
+.walletRed .walletProgress .walletInner .walletPercent,
+.walletOrange .walletProgress .walletInner .walletPercent {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/*
+	红色样式
+*/
+.walletRed .walletProgress .walletInner .walletWater {
+  top: 75%;
+}
+
+/*
+	红色动画1px边框阴影
+*/
+.walletRed .walletProgress .walletInner .walletWater {
+  background: url('../images/walletRed.png') repeat-x;
+  background-position-x:0px; 
+}
+
+/*
+	橘色样式
+*/
+.walletOrange .walletProgress .walletInner .walletWater {
+  top: 50%;
+}
+.walletOrange .walletProgress .walletInner .walletWater {
+  background: url('../images/walletOrange.png') repeat-x;
+  background-position-x:0px;
+}
+
+
+/*
+	动画
+*/
+
+@-webkit-keyframes spin {
+  from {
+     background-position-x:0px;
+  }
+  50% {
+  	background-position-x:204px;
+  }
+  to {
+     background-position-x:408px;
+  }
+}
+@keyframes spin {
+  from {
+     background-position-x:0px;
+  }
+  50% {
+  	background-position-x:204px;
+  }
+  to {
+    background-position-x:408px;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>SMWallet动画波浪球</title>
+ <!--
+    @author:SM
+    @e-mail:sm0210@qq.com
+    @desc:SMWallet动画波浪球
+    @version:SMWallet动画波浪球 0.1
+-->
+<!-- SMWallet样式 -->
+<link rel="stylesheet" type="text/css" href="css/SMWallet.css">
+<!-- jquery -->
+<script language="javascript" src="js/jquery.js"></script>
+<!-- jquery-SMWallet -->
+<script language="javascript" src="js/jquery-SMWallet.js"></script>
+<!-- 案例 -->
+<script language="javascript">
+	$(function(){
+		//
+		//配置信息
+		var config = {
+			//可配置参数：剩余额度标题，默认[剩余额度 (元)]
+			amountTitle:'剩余额度 (元)',
+			//必须参数：剩余额度，默认0.00
+			amount:'3945.26',
+			//必须参数：本月总额度，默认0.00
+			total:'5000.00'
+		};
+		//实例化1
+		var wa = $('#walletEl').initSMWallet(config);
+		
+		//reload 重新渲染
+		//var config2 = {};
+		//config2.amount = '4500.00';
+		//config2.amountTitle = 'reload渲染';
+		//wa.reload(config2);
+		
+		//实例化2
+        config.amount = '2500.00';
+		$('#walletEl2').initSMWallet(config);
+		
+		//实例化3
+        config.amount = '1500.00';
+		$('#walletEl3').initSMWallet(config);
+	});
+</script>
+</head>
+
+<body>
+<!-- SMWallet动画波浪球Begin -->
+    <div id="walletEl"></div><br/>
+    <div id="walletEl2"></div><br/>
+    <div id="walletEl3"></div>
+<!-- SMWallet动画波浪球End -->
+</body>
+</html>
